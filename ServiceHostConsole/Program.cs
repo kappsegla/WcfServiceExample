@@ -27,7 +27,7 @@ namespace ServiceHostConsole
                 // by the service.
                 host.Open();
 
-               // Console.WriteLine("The service is ready at {0}", baseAddress);
+                Console.WriteLine("The service is ready at {0}", baseAddress);
                 Console.WriteLine("Press <Enter> to stop the service.");
                 Console.ReadLine();
 

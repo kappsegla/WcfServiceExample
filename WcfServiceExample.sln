@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHostConsole", "ServiceHostConsole\ServiceHostConsole.csproj", "{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceClientConsole", "ServiceClientConsole\ServiceClientConsole.csproj", "{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78C55EAB-A26B-40B9-B833-D5701307D27E} = {78C55EAB-A26B-40B9-B833-D5701307D27E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +32,10 @@ Global
 		{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
