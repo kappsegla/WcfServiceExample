@@ -8,14 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServiceClientConsole.ServiceReference1 {
+namespace WindowsServiceClientConsole.ServiceReference1 {
     using System.Runtime.Serialization;
     using System;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/WcfServiceExample")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1")]
     [System.SerializableAttribute()]
     public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -85,19 +85,19 @@ namespace ServiceClientConsole.ServiceReference1 {
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        ServiceClientConsole.ServiceReference1.CompositeType GetDataUsingDataContract(ServiceClientConsole.ServiceReference1.CompositeType composite);
+        WindowsServiceClientConsole.ServiceReference1.CompositeType GetDataUsingDataContract(WindowsServiceClientConsole.ServiceReference1.CompositeType composite);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<ServiceClientConsole.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(ServiceClientConsole.ServiceReference1.CompositeType composite);
+        System.Threading.Tasks.Task<WindowsServiceClientConsole.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(WindowsServiceClientConsole.ServiceReference1.CompositeType composite);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : ServiceClientConsole.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : WindowsServiceClientConsole.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<ServiceClientConsole.ServiceReference1.IService1>, ServiceClientConsole.ServiceReference1.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<WindowsServiceClientConsole.ServiceReference1.IService1>, WindowsServiceClientConsole.ServiceReference1.IService1 {
         
         public Service1Client() {
         }
@@ -126,11 +126,11 @@ namespace ServiceClientConsole.ServiceReference1 {
             return base.Channel.GetDataAsync(value);
         }
         
-        public ServiceClientConsole.ServiceReference1.CompositeType GetDataUsingDataContract(ServiceClientConsole.ServiceReference1.CompositeType composite) {
+        public WindowsServiceClientConsole.ServiceReference1.CompositeType GetDataUsingDataContract(WindowsServiceClientConsole.ServiceReference1.CompositeType composite) {
             return base.Channel.GetDataUsingDataContract(composite);
         }
         
-        public System.Threading.Tasks.Task<ServiceClientConsole.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(ServiceClientConsole.ServiceReference1.CompositeType composite) {
+        public System.Threading.Tasks.Task<WindowsServiceClientConsole.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(WindowsServiceClientConsole.ServiceReference1.CompositeType composite) {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }
     }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceExample", "WcfServiceExample\WcfServiceExample.csproj", "{78C55EAB-A26B-40B9-B833-D5701307D27E}"
 EndProject
@@ -9,9 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHostConsole", "ServiceHostConsole\ServiceHostConsole.csproj", "{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceClientConsole", "ServiceClientConsole\ServiceClientConsole.csproj", "{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceHost", "WindowsServiceHost\WindowsServiceHost.csproj", "{54D7203A-4163-497E-B600-CFEFC7572CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceClientConsole", "WindowsServiceClientConsole\ServiceClientConsole.csproj", "{69A4E655-7850-40BC-A86B-D2EAAFD4B7D4}"
 	ProjectSection(ProjectDependencies) = postProject
-		{78C55EAB-A26B-40B9-B833-D5701307D27E} = {78C55EAB-A26B-40B9-B833-D5701307D27E}
+		{3BCF34D4-C11E-48A2-897F-9F2554B0979C} = {3BCF34D4-C11E-48A2-897F-9F2554B0979C}
 	EndProjectSection
 EndProject
 Global
@@ -32,10 +34,14 @@ Global
 		{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E3CA7E-E582-4E1A-BADA-D34077ADFDA5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58A4C10A-B0CC-4EE1-9B6F-940C986778A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D7203A-4163-497E-B600-CFEFC7572CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D7203A-4163-497E-B600-CFEFC7572CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D7203A-4163-497E-B600-CFEFC7572CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D7203A-4163-497E-B600-CFEFC7572CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A4E655-7850-40BC-A86B-D2EAAFD4B7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A4E655-7850-40BC-A86B-D2EAAFD4B7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A4E655-7850-40BC-A86B-D2EAAFD4B7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A4E655-7850-40BC-A86B-D2EAAFD4B7D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
